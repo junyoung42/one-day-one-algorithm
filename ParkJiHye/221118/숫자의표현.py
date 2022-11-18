@@ -1,3 +1,4 @@
+# 나의 풀이 (효율성 0점) 
 def solution(n):
     half = n//2  if n%2 == 0 else n//2 +1
     count = 0
@@ -12,7 +13,6 @@ def solution(n):
               break
     return count+1 
 
-# 효율성 0점 
 
 # 다른 풀이
 ```
@@ -36,4 +36,5 @@ k < n
 위 조건을 만족해야 한다.
 
 따라서 위의 조건을 만족하는 k의 개수만큼 연속된 자연수의 합이 n이 될 수 있기 때문에, n의 약수이면서 홀수인 k를 찾으면 된다.
+https://velog.io/@younge/Python-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%AB%EC%9E%90%EC%9D%98-%ED%91%9C%ED%98%84-%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9CLevel-2
 ```
