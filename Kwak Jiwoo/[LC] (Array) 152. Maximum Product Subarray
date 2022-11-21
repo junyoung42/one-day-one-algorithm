@@ -1,0 +1,23 @@
+var maxProduct = function(nums) {
+    
+    let max = nums[0];
+    let preMax = nums[0];
+    // 음수가 있기에 최소값도 저장
+    let preMin = nums[0];
+    
+    for(let i = 1; i < nums.length; i++) {
+        
+        // max가 가질 수 있는 값 세 가지
+        let options = [nums[i], preMax * nums[i] , preMin * nums[i]]
+        
+        preMax = Math.max(...options);
+        preMin = Math.min(...options);
+        
+        max = Math.max(preMax, max);
+        
+    }
+    
+    return max;
+};
+
+// 71ms / 44mb
